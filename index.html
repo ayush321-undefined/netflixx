@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="A little collection of memories, reminders and stories made especially for Darshika.">
+
+  <title>The Darshika Collection | NETFLIX</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- INTRO SCREEN -->
+  <div class="intro-screen" id="introScreen" aria-label="Loading">
+    <div class="intro-logo">NETFLIX</div>
+    <div class="intro-line"><span></span></div>
+    <p>A LITTLE SOMETHING FOR YOU</p>
+  </div>
+
+
+  <!-- NAVIGATION -->
+  <header class="topbar" id="topbar">
+    <div class="nav-left">
+
+      <a class="brand" href="#home" aria-label="Noflix home">
+        NETFLIX
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="active" href="#home">Home</a>
+        <a href="#episodes">Episodes</a>
+        <a href="#memories">Our memories</a>
+        <a href="#soundtracks">Soundtracks</a>
+      </nav>
+
+    </div>
+
+    <div class="nav-right">
+
+      <button class="icon-button search-toggle" id="searchToggle" aria-label="Search collection">
+        ⌕
+      </button>
+
+      <div class="search-box" id="searchBox">
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="Search this collection..."
+          aria-label="Search this collection"
+        >
+      </div>
+
+      <span class="edition-label">DARSHIKA EDITION (click on D button )</span>
+
+      <button class="profile-button" id="profileButton" aria-label="Open birthday note">
+        D </button>
+
+    </div>
+  </header>
+
+
+  <main id="home">
+
+    <!-- ==================================
+         HERO SECTION WITH AUTO SLIDESHOW
+         ================================== -->
+
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+
+      <!-- Background image is controlled by JavaScript -->
+      <div class="hero-vignette"></div>
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          <span class="live-dot"></span>
+          NETFLIX ORIGINAL
+          <i></i>
+          SPECIAL RELEASE · 13 NOV 2026
+        </div>
+
+        <p class="hero-genres">
+          FRIENDSHIP <b>|</b> MEMORIES <b>|</b> COMFORT
+        </p>
+
+        <h1 id="heroTitle">
+          13:11 — THE DARSHIKA <span>STORY</span>
+        </h1>
+
+        <div class="hero-meta">
+          <span class="match">98% for you</span>
+          <span>2024–FOREVER</span>
+          <span class="age-tag">U</span>
+          <span>Personal collection</span>
+        </div>
+
+        <p class="hero-description">
+          <em>Some stories deserve to be watched. Hers deserves to be celebrated.</em>
+        </p>
+
+        <div class="hero-actions">
+
+          <button class="btn btn-light" data-open="story">
+            <span class="play-triangle"></span>
+            Play story
+          </button>
+
+          <button class="btn btn-muted" data-open="about">
+            <span class="info-icon">ⓘ</span>
+            More info
+          </button>
+
+        </div>
+
+        <p class="hero-footnote">
+          A LITTLE CORNER OF THE INTERNET, MADE JUST FOR YOU. ♡
+        </p>
+
+      </div>
+
+      <div class="hero-scroll-hint">
+        SCROLL TO EXPLORE <span>↓</span>
+      </div>
+
+    </section>
+
+
+    <!-- CONTINUE WATCHING -->
+
+    <section class="content-section continue-section" id="episodes">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">YOUR PERSONAL WATCHLIST</p>
+          <h2>Continue watching <span>for Darshika</span></h2>
+        </div>
+
+        <span class="row-count">04 EPISODES</span>
+
+      </div>
+
+      <div class="poster-row episode-row" id="episodeRow">
+
+        <button class="poster-card wide-card" data-open="story">
+          <div class="poster-image">
+            <img src="assets/images/first-selfie.jpg" alt="Our first group selfie">
+            <span class="card-play">▶</span>
+            <span class="poster-number">01</span>
+          </div>
+
+          <div class="poster-copy">
+            <span class="card-category">THE BEGINNING · 2024</span>
+            <strong>It Started With A Selfie</strong>
+            <small>Our story · 6 Dec 2024</small>
+            <div class="progress-track"><span style="width:18%"></span></div>
+          </div>
+        </button>
+
+
+        <button class="poster-card" data-open="hurt">
+          <div class="poster-image">
+            <img src="assets/images/yellow-outfit.png" alt="Darshika in a yellow outfit">
+            <span class="card-play">▶</span>
+            <span class="poster-number">02</span>
+          </div>
+
+          <div class="poster-copy">
+            <span class="card-category">A LITTLE REMINDER</span>
+            <strong>Not Everyone Deserves Your Energy</strong>
+            <small>When people do wrong things with you</small>
+            <div class="progress-track"><span style="width:0%"></span></div>
+          </div>
+        </button>
+
+
+        <button class="poster-card" data-open="friends">
+          <div class="poster-image">
+            <img src="assets/images/blue-dress-flowers.jpeg" alt="Darshika in a blue dress">
+            <span class="card-play">▶</span>
+            <span class="poster-number">03</span>
+          </div>
+
+          <div class="poster-copy">
+            <span class="card-category">FRIENDSHIP ORIGINAL</span>
+            <strong>Hey, Look Around</strong>
+            <small>When you need your people</small>
+            <div class="progress-track"><span style="width:0%"></span></div>
+          </div>
+        </button>
+
+
+        <button class="poster-card" data-open="tough">
+          <div class="poster-image">
+            <img src="assets/images/maroon-saree.jpeg" alt="Darshika in a maroon saree">
+            <span class="card-play">▶</span>
+            <span class="poster-number">04</span>
+          </div>
+
+          <div class="poster-copy">
+            <span class="card-category">SELF-CARE SPECIAL</span>
+            <strong>Soft Days Are Allowed</strong>
+            <small>When things feel difficult</small>
+            <div class="progress-track"><span style="width:0%"></span></div>
+          </div>
+        </button>
+
+
+        <button class="poster-card" data-open="alone">
+          <div class="poster-image">
+            <img src="assets/images/hero-red-portrait.png" alt="Darshika in a red outfit">
+            <span class="card-play">▶</span>
+            <span class="poster-number">05</span>
+          </div>
+
+          <div class="poster-copy">
+            <span class="card-category">A NOTE FROM YOUR ULLU</span>
+            <strong>You're Not Alone</strong>
+            <small>When you feel alone</small>
+            <div class="progress-track"><span style="width:0%"></span></div>
+          </div>
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- PHOTO MEMORIES -->
+
+    <section class="content-section" id="memories">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">THE GIRL OF THE MOMENT</p>
+          <h2>Darshika, in frames <span>♡</span></h2>
+        </div>
+
+        <button class="text-link" data-open="gallery">
+          View all memories ↗
+        </button>
+
+      </div>
+
+      <div class="poster-row memory-row">
+
+        <button class="memory-card memory-feature" data-photo="hero-red-portrait.png">
+          <img src="assets/images/hero-red-portrait.png" alt="Darshika in red">
+          <span class="memory-overlay">
+            <b>HER ERA.</b>
+            <small>THE GIRL. THE LEGEND.</small>
+          </span>
+        </button>
+
+        <button class="memory-card" data-photo="blue-dress-flowers.jpeg">
+          <img src="assets/images/blue-dress-flowers.jpeg" alt="Darshika in blue">
+          <span class="memory-overlay"><b>MAIN CHARACTER</b></span>
+        </button>
+
+        <button class="memory-card" data-photo="pink-portrait.png">
+          <img src="assets/images/pink-portrait.png" alt="Darshika in pink">
+          <span class="memory-overlay"><b>SOFT MOMENTS</b></span>
+        </button>
+
+        <button class="memory-card" data-photo="maroon-saree.jpeg">
+          <img src="assets/images/maroon-saree.jpeg" alt="Darshika in maroon">
+          <span class="memory-overlay"><b>THE GLOW-UP</b></span>
+        </button>
+
+        <button class="memory-card" data-photo="yellow-outfit.png">
+          <img src="assets/images/yellow-outfit.png" alt="Darshika in yellow">
+          <span class="memory-overlay"><b>GOLDEN HOUR</b></span>
+        </button>
+
+        <button class="memory-card" data-photo="green-outfit.png">
+          <img src="assets/images/green-outfit.png" alt="Darshika in green">
+          <span class="memory-overlay"><b>A LITTLE MAGIC</b></span>
+        </button>
+
+        <button class="memory-card" data-photo="casual-portrait.png">
+          <img src="assets/images/casual-portrait.png" alt="Darshika smiling">
+          <span class="memory-overlay"><b>JUST DARSHIKA</b></span>
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- COMFORT EPISODES -->
+
+    <section class="content-section comfort-section">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">OPEN WHENEVER YOU NEED</p>
+          <h2>A little something for <span>the tough days</span></h2>
+        </div>
+
+        <span class="row-count">PICK AN EPISODE</span>
+
+      </div>
+
+      <div class="comfort-grid">
+
+        <button class="comfort-card" data-open="hurt">
+          <span class="comfort-icon">♡</span>
+          <span class="comfort-number">01 / REMINDER</span>
+          <strong>When people do wrong things with you</strong>
+          <small>A reminder that their actions don't define your worth.</small>
+          <span class="comfort-arrow">↗</span>
+        </button>
+
+        <button class="comfort-card" data-open="friends">
+          <span class="comfort-icon">✳</span>
+          <span class="comfort-number">02 / FRIENDSHIP</span>
+          <strong>When you think you have no good friends</strong>
+          <small>Maybe you just need a reminder of who's here.</small>
+          <span class="comfort-arrow">↗</span>
+        </button>
+
+        <button class="comfort-card" data-open="tough">
+          <span class="comfort-icon">☁</span>
+          <span class="comfort-number">03 / SELF-CARE</span>
+          <strong>When you're dealing with things alone</strong>
+          <small>You don't have to be strong every single day.</small>
+          <span class="comfort-arrow">↗</span>
+        </button>
+
+        <button class="comfort-card" data-open="alone">
+          <span class="comfort-icon">☾</span>
+          <span class="comfort-number">04 / COMFORT</span>
+          <strong>When you feel alone</strong>
+          <small>Some people are just one message away.</small>
+          <span class="comfort-arrow">↗</span>
+        </button>
+
+      </div>
+    </section>
+
+
+    <!-- SOUNDTRACKS -->
+
+    <section class="content-section soundtrack-section" id="soundtracks">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="section-kicker">THE ORIGINAL SOUNDTRACK</p>
+          <h2>Press play, <span>remember us.</span></h2>
+        </div>
+
+        <span class="row-count">2 TRACKS</span>
+
+      </div>
+
+      <div class="soundtrack-grid">
+
+        <article class="track-card">
+
+          <div class="track-art locha-art">
+            <span>♫</span>
+            <small>OUR BEGINNING</small>
+          </div>
+
+          <div class="track-info">
+            <span class="card-category">TRACK 01 · THE FIRST CHAPTER</span>
+            <strong>Locha-E-Ulfat</strong>
+            <small>For the day our story began.</small>
+
+            <audio controls preload="none" src="assets/audio/locha-e-ulfat.mp3"></audio>
+          </div>
+
+        </article>
+
+
+        <article class="track-card">
+
+          <div class="track-art aditi-art">
+            <span>☼</span>
+            <small>FOR THE LONELY DAYS</small>
+          </div>
+
+          <div class="track-info">
+            <span class="card-category">TRACK 02 · A LITTLE COMFORT</span>
+            <strong>Kabhi Kabhi Aditi</strong>
+            <small>For when you need a tiny mood-lifter.</small>
+
+            <audio controls preload="none" src="assets/audio/kabhi-kabhi-aditi.mp3"></audio>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- BIRTHDAY ENDING -->
+
+    <section class="closing-banner">
+
+      <div class="closing-spark">✳</div>
+
+      <p>ONE LAST THING, BHONDU</p>
+
+      <h2>
+        You're someone's<br>
+        <em>favourite friend.</em>
+      </h2>
+
+      <span>And I'm really glad I got to know you.</span>
+
+      <button class="btn btn-light" data-open="note">
+        Read your birthday note <span>↗</span>
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <div class="footer-brand">NETFLIX</div>
+
+    <p>MADE WITH A LOT OF CARE, A LITTLE CHAOS & TOO MANY MEMORIES.</p>
+
+    <p class="footer-small">
+      HAPPY BIRTHDAY, DARSHIKA. · 13 NOVEMBER 2026
+    </p>
+
+  </footer>
+
+
+  <!-- EPISODE DETAIL MODAL -->
+
+  <div class="modal-backdrop" id="detailModal" aria-hidden="true">
+
+    <section class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+
+      <div class="modal-hero" id="modalHero">
+
+        <div class="modal-hero-shade"></div>
+
+        <div class="modal-hero-copy">
+          <span class="modal-kicker" id="modalKicker"></span>
+          <h2 id="modalTitle"></h2>
+          <div class="modal-meta" id="modalMeta"></div>
+        </div>
+
+      </div>
+
+      <div class="modal-body">
+
+        <div class="modal-main-copy">
+
+          <p class="modal-subtitle" id="modalSubtitle"></p>
+
+          <div class="letter-copy" id="modalLetter"></div>
+
+          <div class="modal-actions" id="modalActions"></div>
+
+        </div>
+
+        <aside class="modal-side">
+
+          <span>THIS EPISODE IS FOR</span>
+          <p id="modalFor"></p>
+
+          <span>FROM YOUR FAVOURITE ULLU</span>
+          <p class="side-signature">— Ayush ♡</p>
+
+        </aside>
+
+      </div>
+
+
+      <!-- VIDEO PLAYER -->
+
+      <div class="video-wrap" id="videoWrap" hidden>
+
+        <div class="video-heading">
+          <span>NOW PLAYING</span>
+          <span id="videoLabel"></span>
+        </div>
+
+        <div class="video-frame">
+
+          <iframe
+            id="videoFrame"
+            title="Episode video"
+            src=""
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin">
+          </iframe>
+
+        </div>
+
+      </div>
+
+
+      <div class="modal-bottom">
+        <span>THE DARSHIKA COLLECTION</span>
+        <span>TAKE YOUR TIME. ♡</span>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- ALL MEMORIES GALLERY -->
+
+  <div class="gallery-overlay" id="galleryOverlay" aria-hidden="true">
+
+    <button class="gallery-close" id="galleryClose" aria-label="Close memories gallery">×</button>
+
+    <section class="gallery-panel" role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+      <p class="section-kicker">THE GIRL OF THE MOMENT</p>
+      <h2 id="galleryTitle">Darshika, in frames <span>♡</span></h2>
+      <p class="gallery-intro">A few favorite moments, all in one place.</p>
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </section>
+
+  </div>
+
+
+  <!-- PHOTO LIGHTBOX -->
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+
+    <button id="lightboxClose" aria-label="Close photo">×</button>
+
+    <img id="lightboxImage" src="" alt="Darshika memory">
+
+    <p>THE GIRL. THE LEGEND. ♡</p>
+
+  </div>
+
+
+  <!-- TOAST -->
+
+  <div class="toast" id="toast" role="status"></div>
+
+</body>
+</html>
